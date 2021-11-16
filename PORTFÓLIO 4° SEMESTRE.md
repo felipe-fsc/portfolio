@@ -15,15 +15,15 @@ Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, 
 <!--te-->
 
 ## - Tecnologias
-![Oracle](https://img.shields.io/badge/oracle-%23F00000.svg?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle](https://img.shields.io/badge/oracle-%23F00000.svg?style=for-the-badge&logo=oracle&logoColor=white)<br>
 A ferramenta de banco de dados em questão foi escolhida para armazenar as informações de candidatos a vagas de emprego, para que possam ser consultadas posteriormente pelos empregadores.
-O Oracle também permite criar usuários com limitações de acesso específicas, o que é um diferencial em um sistema que será acessado tanto por usuários, quanto por administradores.
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-Esta linguagem foi utilizada para criar funções dentro da plataforma, como o cálculo de custo de transporte público via integração com o Google Maps.
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+O Oracle também permite criar usuários com limitações de acesso específicas, o que é um diferencial em um sistema que será acessado tanto por usuários, quanto por administradores.<br>
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)<br>
+Esta linguagem foi utilizada para criar funções dentro da plataforma, como o cálculo de custo de transporte público via integração com o Google Maps.<br>
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)<br>
 Como esse sistema se trata de uma plataforma Full Stack, utilizamos o React pela facilidade que o mesmo apresenta ao se conectar com banco de dados e com códigos Back End.
-As linguagens de Front End foram utilizadas para funcionar como a interface do sistema que foi desenvolvido. Os formulários preenchidos pelos candidatos e as páginas de listagem de vagas e de candidatos foram apresentadas em cima dessas ferramentas.
-![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
+As linguagens de Front End foram utilizadas para funcionar como a interface do sistema que foi desenvolvido. Os formulários preenchidos pelos candidatos e as páginas de listagem de vagas e de candidatos foram apresentadas em cima dessas ferramentas.<br>
+![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)<br>
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
 
 ## - Contribuições Individuais
