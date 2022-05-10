@@ -18,8 +18,10 @@ O objetivo do projeto é que um grupo de alunos desenvolva uma aplicação em qu
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 Utilizei essa linguagem pela sua simplicidade, como esse é um projeto de 1° semestre, meu nível técnico ainda era de um programador iniciante, com algumas noções de lógica e sem muitas aplicações práticas como desenvolvedor.
 Fazer um projeto em Python funcionou muito bem, pois além da simplicidade, pude fazer bom uso das bibliotecas que integram com essa linguagem, o que me permitiu trazer bons recursos para o bot que foi desenvolvido.
+
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 O Pandas foi um recurso fundamental para o que pude fazer depois da etapa de extração de dados. Como a informação captada foi retornada como um arquivo .csv, minha equipe decidiu criar uma interface no Excel para retornar esses dados de forma organizada e o Pandas foi uma biblioteca que serviu muito bem com os recursos fornecidos.
+
 ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 Fui instruído a utilizar uma ferramenta de versionamento de código.
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
@@ -101,6 +103,7 @@ O principal objetivo do projeto é desenvolver um sistema para a Visão Estraté
 As linguagens de Front End foram utilizadas para funcionar como a interface do sistema que foi desenvolvido. A mostra do diagrama e a aplicação do funcionamento de seus recursos foram apresentados em cima dessas ferramentas.
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 Essa linguagem foi utilizada pois para fazer a conexão entre a interface e o banco de dados. Um dos requisitos do projeto era justamente permitir com que as informações preenchidas na interface do sistema fossem armazenadas em um BD.
+
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 A ferramenta de banco de dados em questão foi escolhida para armazenar as informações preenchidas nos formulários de CRUD do sistema criado.
 
@@ -203,10 +206,13 @@ Futuro: a interface contará com um banner, que irá permitir acesso a artigos q
 #### Tecnologias Utilizadas
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 As linguagens de Front End foram utilizadas para funcionar como a interface do sistema que foi desenvolvido. A mostra do diagrama e a aplicação do funcionamento de seus recursos foram apresentados em cima dessas ferramentas. O jQuery e o Bootstrap entraram nessa equação para permitir que eu pudesse explorar novos recursos do desenvolvimento front end, trazendo melhorias para a plataforma criada.
+
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 A ferramenta de banco de dados em questão foi escolhida para armazenar as informações que o cliente enviou e fazer a integração desses dados recebidos com a mostra de dashboard do sistema.
+
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 Esta linguagem foi utilizada para criar funções dentro da plataforma, permitindo que a mesma apresente recursos como filtros e cálculo de performance financeira do usuário.
+
 ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
 
@@ -288,11 +294,14 @@ Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, 
 ![Oracle](https://img.shields.io/badge/oracle-%23F00000.svg?style=for-the-badge&logo=oracle&logoColor=white)
 A ferramenta de banco de dados em questão foi escolhida para armazenar as informações de candidatos a vagas de emprego, para que possam ser consultadas posteriormente pelos empregadores.
 O Oracle também permite criar usuários com limitações de acesso específicas, o que é um diferencial em um sistema que será acessado tanto por usuários, quanto por administradores.
+
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 Esta linguagem foi utilizada para criar funções dentro da plataforma, como o cálculo de custo de transporte público via integração com o Google Maps.
+
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 Como esse sistema se trata de uma plataforma Full Stack, utilizamos o React pela facilidade que o mesmo apresenta ao se conectar com banco de dados e com códigos Back End.
 As linguagens de Front End foram utilizadas para funcionar como a interface do sistema que foi desenvolvido. Os formulários preenchidos pelos candidatos e as páginas de listagem de vagas e de candidatos foram apresentadas em cima dessas ferramentas.
+
 ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
 
