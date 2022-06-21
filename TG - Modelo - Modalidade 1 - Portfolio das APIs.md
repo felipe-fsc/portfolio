@@ -27,9 +27,10 @@ Fui instruído a utilizar uma ferramenta de versionamento de código.
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
 
 #### Contribuições 
-Criei uma função que retorna um ranking ordenando despesas dos deputados de acordo com a quantidade de deputados selecionados (no exemplo foram 10)
-```
-CONTROLE = 10
+<details>
+  <summary>Criei uma função que retorna um ranking ordenando despesas dos deputados de acordo com a quantidade de deputados selecionados (no exemplo foram 10)</summary>
+  
+  ```CONTROLE = 10
 
 while CONTROLE != 0 :
 
@@ -42,11 +43,13 @@ while CONTROLE != 0 :
     CONTROLE = int(input("INFORME A ANALISE DESEJADA: "))
 
     qtd_dp = int(qtd_dp)
-```
+  ```
+</details>
 
-Criei comandos que permitem ao usuário ordenar esse ranking em ordem crescente ou decrescente
-```
-# ORDENAR DADOS DA TABELA ATRAVÉS DA FUNÇÃO "sort_values"
+<details>
+  <summary>Criei comandos que permitem ao usuário ordenar esse ranking em ordem crescente ou decrescente</summary>
+  
+  ```# ORDENAR DADOS DA TABELA ATRAVÉS DA FUNÇÃO "sort_values"
 
 # ORDENANDO DECRESCENTE
     tabela_maior = PLANILHA.sort_values(['GASTO','ID'], ascending=False)
@@ -65,17 +68,20 @@ Criei comandos que permitem ao usuário ordenar esse ranking em ordem crescente 
         print(tabela_menor.head(qtd_dp))
 
     elif CONTROLE == 3:
-```
+  ```
+</details>
 
-Criei um bot que acessou uma api e fez a captura dos dados inseridos na mesma, gerando um arquivo .csv com as informações captadas
-```
-import requests
+<details>
+  <summary>Criei um bot que acessou uma api e fez a captura dos dados inseridos na mesma, gerando um arquivo .csv com as informações captadas</summary>
+  
+  ```import requests
 
 URL = 'https://dadosabertos.camara.leg.br/api/v2/deputados'
 RESP = requests.get(URL).json()
 
 FILE_CSV = open('NOME_ID_TOTAL.csv', 'w')  # criando arquivo csv para escrever nome, ID, e total de gastos de cada deputado
-```
+  ```
+</details>
 
 #### Hard Skills
 ##### Git ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
@@ -108,9 +114,10 @@ Essa linguagem foi utilizada pois para fazer a conexão entre a interface e o ba
 A ferramenta de banco de dados em questão foi escolhida para armazenar as informações preenchidas nos formulários de CRUD do sistema criado.
 
 #### Contribuições 
-Banco de dados criado para armazenar as informações preenchidas nos CRUD's.
-```
-CREATE DATABASE gantt;
+<details>
+  <summary>Banco de dados criado para armazenar as informações preenchidas nos CRUD's.</summary>
+  
+  ```CREATE DATABASE gantt;
 CREATE TABLE `gantt_links` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `source` int(11) NOT NULL,
@@ -128,11 +135,13 @@ CREATE TABLE `gantt_tasks` (
   `sortorder` int NOT NULL,
   PRIMARY KEY (`id`)
 );
-```
+  ```
+</details>
 
-Função do NodeJS que retorna na interface do sistema todos os dados já cadastrados
-```
-app.get("/data", function (req, res) {
+<details>
+  <summary>Função do NodeJS que retorna na interface do sistema todos os dados já cadastrados</summary>
+  
+  ```app.get("/data", function (req, res) {
 	Promise.all([
 		db.query("SELECT * FROM gantt_tasks ORDER BY sortorder ASC"),
 		db.query("SELECT * FROM gantt_links")
@@ -154,11 +163,13 @@ app.get("/data", function (req, res) {
 		sendResponse(res, "error", null, error);
 	});
 });
-```
+  ```
+</details>
 
-Função do Javascript criada para validar tentativa de login com um determinado preenchimento de usuário e senha 
-```
-<script type="text/javascript">
+<details>
+  <summary>Função do Javascript criada para validar tentativa de login com um determinado preenchimento de usuário e senha</summary>
+  
+  ```<script type="text/javascript">
 	function validar(){
 		if ($("#usuario").val().toUpperCase()!= "ADMIN" || $("#senha").val()!= "megadev2020") {
 			return alert("Usuário ou Senha invalido");
@@ -172,7 +183,8 @@ Função do Javascript criada para validar tentativa de login com um determinado
 		}
 	})
 </script>
-```
+  ```
+</details>
 
 #### Hard Skills
 ##### Padrões de projeto
@@ -217,9 +229,10 @@ Esta linguagem foi utilizada para criar funções dentro da plataforma, permitin
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
 
 #### Contribuições 
-Parte do banco de dados criado para armazenar as informações enviadas pelo SPC.
-```
-CREATE TABLE `modalidade` (
+<details>
+  <summary>Parte do banco de dados criado para armazenar as informações enviadas pelo SPC.</summary>
+  
+  ```CREATE TABLE `modalidade` (
   `cod_modalidade` varchar(3) NOT NULL,
   `des_modalidade` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`cod_modalidade`)
@@ -233,11 +246,13 @@ CREATE TABLE `modalidade` (
 LOCK TABLES `modalidade` WRITE;
 /*!40000 ALTER TABLE `modalidade` DISABLE KEYS */;
 INSERT INTO `modalidade` VALUES ('A01','EMPRESTIMO - CONSIGNADO'),('A02','EMPRESTIMO - CAPITAL DE GIRO'),('A04','EMPRESTIMO - CREDITO PESSOAL'),('A05','EMPRESTIMO - MICROCREDITO'),('A99','OUTROS EMPRESTIMOS'),('B01','FINANCIAMENTO - RURAL E AGROINDUSTRIAL'),('B02','FINANCIAMENTO - IMPORTACAO  E EXPORTACAO'),('B03','FINANCIAMENTO - IMOBILIARIOS SFH'),('B04','FINANCIAMENTO - MICROCREDITO'),('B05','FINANCIAMENTO - AQUISICAO DE BENS (VEICULOS)'),('B06','FINANCIAMENTO - IMOBILIARIO (OUTROS)'),('B07','FINANCIAMENTO - ARREENDAMENTO'),('B99','OUTROS FINANCIAMENTOS'),('C01','CONSORCIO'),('D01','CARTAO DE CREDITO'),('E01','CHEQUE ESPECIAL E CONTA GARANTIDA'),('E02','ADIANTAMENTO DEPOSITANTE'),('F01','AVAIS E FIANCASA HONRADOS'),('G01','TITULOS DESCONTADOS');
-```
+  ```
+</details>
 
-Banner rotativo
-```
-<ol class="carousel-indicators">
+<details>
+  <summary>Banner rotativo</summary>
+  
+  ```<ol class="carousel-indicators">
   <li data-target="#meuCarousel" data-slide-to="0" class="active"></li>
   <li data-target="#meuCarousel" data-slide-to="1"></li>
   <li data-target="#meuCarousel" data-slide-to="2"></li>
@@ -246,11 +261,13 @@ Banner rotativo
   <li data-target="#meuCarousel" data-slide-to="5"></li>
   <li data-target="#meuCarousel" data-slide-to="6"></li>
 </ol>
-```
+  ```
+</details>
 
-Configurações para conexão entre Back End e banco de dados 
-```
-version: '3'
+<details>
+  <summary>Configurações para conexão entre Back End e banco de dados</summary>
+  
+  ```version: '3'
 
 services:
   mysqlsrv:
@@ -270,8 +287,9 @@ volumes:
 networks: 
   mysql-compose-network:
     driver: bridge
-```
-
+  ```
+</details>
+ 
 #### Hard Skills
 ##### Markdown
 Neste projeto, nos foi cobrado com mais afinco o desenvolvimento de um readme de maior qualidade. Portanto, estudamos os recursos de layout e aprendemos mais sobre a linguagem markdown para desenvolvermos um documento de maior qualidade.
@@ -306,9 +324,10 @@ As linguagens de Front End foram utilizadas para funcionar como a interface do s
 Escolhi o Gitlab por conta de um recurso extra que a plataforma tem em relação ao Github. Ambas permitem a integração com terminal Gitbash e a criação de branchs para gerenciamento das alterações no código, considerando que estamos falando de um projeto realizado em equipe, com a contribuição de diferentes desenvolvedores. Porém, o Gitlab possue um recurso extra, que são as Milestones, através das issues criadas e do gráfico de KanBan fornecido, consegui fazer um gerenciamento muito superior de cada sprint em relação ao que seria possível fazer pelo Github.
 
 #### Contribuições 
-Configurações do banco de dados Oracle com as requeridas permissões de administrador do sistema.
-```
-CREATE TABLESPACE  tecnocode
+<details>
+  <summary>Configurações do banco de dados Oracle com as requeridas permissões de administrador do sistema.</summary>
+  
+  ```CREATE TABLESPACE  tecnocode
 DATAFILE  'C:\BD\tecnocode.dbf' SIZE 1M
 AUTOEXTEND ON;
 ------------------
@@ -323,11 +342,13 @@ QUOTA UNLIMITED ON tecnocode;
 -- PRIVILEGIOS --
 -----------------
 GRANT DBA TO tecnocode WITH ADMIN OPTION;
-```
+  ```
+</details>
 
-Cadastro de candidato no sistema
-```
-const mock = {
+<details>
+  <summary>Cadastro de candidato no sistema</summary>
+  
+  ```const mock = {
     id_candidato: "",
     id_endereco: "",
     nome_candidato: "",
@@ -352,12 +373,14 @@ const mock = {
     ]
 
 }
-```
+  ```
+</details>
 
-Desenvolvi uma função no Oracle Sql para converter o endereço cadastrado pelo candidato em valores de latitude e longitude.
-O objetivo dessa função é medir a distância entre o endereço que a empresa que está oferecendo a vaga cadastra e o endereço cadastrado pelo candidato, caso o empregador queira filtrar as pessoas que se cadastraram pela distância que as mesmas terão que percorrer até o local de trabalho, o que foi um dos requisitos a serem cumpridos durante esse projeto.
-```
-create or replace function get_address_by_lat_long (vacancy_lat float, vacancy_long float, range_distance number)
+<details>
+  <summary>Desenvolvi uma função no Oracle Sql para converter o endereço cadastrado pelo candidato em valores de latitude e longitude.
+O objetivo dessa função é medir a distância entre o endereço que a empresa que está oferecendo a vaga cadastra e o endereço cadastrado pelo candidato, caso o empregador queira filtrar as pessoas que se cadastraram pela distância que as mesmas terão que percorrer até o local de trabalho, o que foi um dos requisitos a serem cumpridos durante esse projeto.</summary>
+  
+  ```create or replace function get_address_by_lat_long (vacancy_lat float, vacancy_long float, range_distance number)
     return output_address PIPELINED is
     begin
         for RECORD_OUTPUT IN (
@@ -386,7 +409,8 @@ create or replace function get_address_by_lat_long (vacancy_lat float, vacancy_l
           FROM address
         ) x
         where distance <= range_distance AND distance > 0)-- quilometros
-```
+  ```
+</details>
 
 #### Hard Skills
 ##### Funções de Product Owner
@@ -446,11 +470,10 @@ Utilizamos o MongoDb como banco de dados não relacional para trabalhar com os r
 Seguimos esse padrão para melhorar o controle de versionamento através das branchs utilizadas no projeto.
 
 #### Contribuições
-Criei o dashboard da interface principal da plataforma
-
-```
-
-function  Dashboard()  {
+<details>
+  <summary>Criei o dashboard da interface principal da plataforma</summary>
+  
+  ```function  Dashboard()  {
 
   
 
@@ -615,15 +638,13 @@ value={(mongoData?.averageEngagementForConnection *  100).toFixed(2)}
 );
 
 }
-```
+  ```
+</details>
 
+<details>
+  <summary>Criei a conexão da plataforma com os métodos da API</summary>
   
-
-Criei a conexão da plataforma com os métodos da API
-
-```
-
-const  handleGetAll  =  ()  =>  {
+  ```const  handleGetAll  =  ()  =>  {
 
 API.get('/login/all').then((response)  =>  {
 
@@ -692,15 +713,13 @@ enqueueSnackbar('Não foi possível apagar a categoria. Ela pode estar vinculada
 });
 
 };
-```
+  ```
+</details>
 
+<details>
+  <summary>Criei a estrutura DDL do banco de dados do sistema</summary>
   
-
-Criei a estrutura DDL do banco de dados do sistema
-
-```
-
--- MySQL Script generated by MySQL Workbench
+  ```-- MySQL Script generated by MySQL Workbench
 
 -- Wed Nov 3 00:57:31 2021
 
@@ -914,8 +933,8 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-```
+  ```
+</details>
 
 #### Hard Skills
 
@@ -950,11 +969,10 @@ O aprendizado de definição de padrões de imagem tem valia no sentido de ser u
 Utilizei essa linguagem por solicitação do professor, o Python é bastante recomendado para o desenvolvimento de códigos de inteligência artificial e se mostrou bem eficiente durante a execução desse projeto.
 
 #### Contribuições
-Utilizei a biblioteca pygame para importar o código do jogo Flappy Bird para o Python
-
-```
-
-import pygame
+<details>
+  <summary>Utilizei a biblioteca pygame para importar o código do jogo Flappy Bird para o Python</summary>
+  
+  ```import pygame
 
 TELA_LARGURA  =  500
 
@@ -981,14 +999,13 @@ pygame.transform.scale2x(pygame.image.load(os.path.join('imgs',  'bird3.png'))),
 pygame.font.init()
 
 FONTE_PONTOS  = pygame.font.SysFont('arial',  50)
+  ```
+</details>
 
-```
-
-Criei a função que posiciona os obstáculos do jogo de forma randômica na interface
-
-```
-
-class  Cano:
+<details>
+  <summary>Criei a função que posiciona os obstáculos do jogo de forma randômica na interface</summary>
+  
+  ```class  Cano:
 
 DISTANCIA  =  200
 
@@ -1023,18 +1040,17 @@ self.altura  = random.randrange(50,  450)
 self.pos_topo  =  self.altura  -  self.CANO_TOPO.get_height()
 
 self.pos_base  =  self.altura  +  self.DISTANCIA
+  ```
+</details>
 
-```
-
-Desenvolvi a função da inteligência artificial que toma a decisão de se o pássaro vai subir ou descer, levando em conta os seguintes critérios:
+<details>
+  <summary>Desenvolvi a função da inteligência artificial que toma a decisão de se o pássaro vai subir ou descer, levando em conta os seguintes critérios:
 
 1 - Distância do pássaro em relação ao chão
 2 - Distância do pássaro para a parte superior do obstáculo
-3 - Distância do pássaro para a parte inferior do obstáculo
-
-```
-
-for  i,  passaro  in  enumerate(passaros):
+3 - Distância do pássaro para a parte inferior do obstáculo</summary>
+  
+  ```for  i,  passaro  in  enumerate(passaros):
 
 passaro.mover()
 
@@ -1047,8 +1063,8 @@ output  =  redes[i].activate((passaro.y,  abs(passaro.y  -  canos[indice_cano].a
 if  output[0]  >  0.5:
 
 passaro.pular()
-
-```
+  ```
+</details>
 
 #### Hard Skills
 ##### Machine Learning
